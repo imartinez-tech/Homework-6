@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <header class="dash">Weather Dashboard</header>
+    <div class="row">
+    <aside class="col-3">
+       <div class="search">Search for a city:</div> 
+       <br>
+       <input type="text" placeholder="Search" id="city-search">
+       <br>
+       <div>
+            <button class="searchBtn" id="fetch-button"> 
+                Search
+            </button>
+       </div>
+    </aside>
+    <div class="col-9">
+        <div class="jumbotron">
+            <h1 id="city-weather">Choose a City</h1>
+            <h2 id="forecast-name">5-Day Forecast</h2>
+            <h4 id="temp"></h4>
+        </div>
+          <div class="card-group">
+            <div class="card">
+              <div class="card-body" id="day1">
+                <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+                <p class="card-text"><small class="text-muted"></small></p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body" id="day2">
+                <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+                <p class="card-text"><small class="text-muted"></small></p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body" id="day3">
+                <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+                <p class="card-text"><small class="text-muted"></small></p>
+              </div>
+            </div>
+            <div class="card">
+                <div class="card-body" id="day4">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text"></p>
+                  <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body" id="day5">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text"></p>
+                  <p class="card-text"><small class="text-muted"></small></p>
+                </div>
+              </div>
+          </div>
+    </div>
+  
+    </div>
+
+    <div class="current">
+
+    </div>
+    <div id="repo-table">
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
